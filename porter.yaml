@@ -1,7 +1,0 @@
-services:
-  - name: worker
-    type: worker
-    run: python -u poller.py
-    connections:
-      - type: awsRole
-        role: arn:aws:iam::742157296695:role/sqs-poller-worker
